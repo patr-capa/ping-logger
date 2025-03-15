@@ -70,9 +70,6 @@ def log_results(results):
 
 def send_email():
 
-    #Load environment variables from .env
-    load_dotenv()
-
     """Send the log file via email."""
     if not os.path.exists(OUTPUT_FILE):
         print("Log file not found, skipping email.")
